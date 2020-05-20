@@ -49,7 +49,7 @@ public class PermissionRealm  extends AuthorizingRealm {
         Object pwd = user.getPassword();
         ByteSource bytes = ByteSource.Util.bytes(user.getUsername());
         String name = getName();
-        SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(p,password,bytes,name);
+        SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(p,pwd,bytes,name);
         return  simpleAuthenticationInfo;
 
     }
