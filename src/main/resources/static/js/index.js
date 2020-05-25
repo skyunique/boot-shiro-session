@@ -50,7 +50,6 @@ $(function(){
         var show = $('.right input[name="show"]').val();
 
         var url = '/register';
-        alert(username+"---"+password);
         var args = {"username": username,"password": password, "show": show};
         $.ajax({
             type: 'POST',
